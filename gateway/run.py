@@ -170,6 +170,17 @@ def _is_transient_network_error(exc: BaseException) -> bool:
         "ServerDisconnectedError",
         "ClientConnectorError",
         "ClientOSError",
+        # Discord permission errors — transient (channel deleted, bot
+        # kicked, DM closed).  Must not crash the gateway; the adapter's
+        # send() already returns SendResult(success=False) for these.
+        "Forbidden",
+        "NotFound",
+        # HTTP-level rate-limit / server errors that also should not
+        # propagate to the event loop unhandled.
+        "TooManyRequests",
+        "ServiceUnavailable",
+        "BadGateway",
+        "GatewayTimeout",
     }
     while cur is not None and depth < 12:
         ident = id(cur)
