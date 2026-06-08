@@ -52,7 +52,7 @@ def build_samples() -> dict[str, str]:
     )
 
     code_path = Path("/home/mike/.hermes/hermes-agent/agent/context_compressor.py")
-    samples["hermes_context_compressor_code"] = code_path.read_text(errors="replace")[:65000]
+    samples["hermes_context_compressor_code"] = code_path.read_text(encoding="utf-8", errors="replace")[:65000]
 
     transcript = subprocess.check_output(
         [
