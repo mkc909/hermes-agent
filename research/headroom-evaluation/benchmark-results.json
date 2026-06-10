@@ -1,0 +1,67 @@
+[
+  {
+    "sample": "json_d1_results",
+    "chars_before": 143937,
+    "chars_after": 95887,
+    "tokens_before_est": 39021,
+    "tokens_after_est": 31421,
+    "tokens_saved_est": 7600,
+    "savings_pct_est": 19.5,
+    "content_type": "ContentType.JSON",
+    "handler_used": "json",
+    "ccr_key_present": true,
+    "sample_compressed_prefix": "{\\n  \"results\": [\\n    {\\n      \"id\": \"CDL-1000\",\\n      \"capture_id\": \"cap_20260608_0000\",\\n      \"status\": \"failed\",\\n      \"failed_step\": \"transcribe\",\\n      \"workflow_run_id\": \"wr_00000000_a165595878d3bc64c5381dfef6813128\",\\n      \"notes\":\"Snowden Quick Capture audio audit row with survey field note metadata, GNSS RTK 12D TBC references, repeated operational detail. Snowden Quick Capture audio audit row with survey field note metadata, GNSS RTK 12D TBC references, repeated operational detail. \",\\n  "
+  },
+  {
+    "sample": "worker_logs",
+    "chars_before": 38859,
+    "chars_after": 38859,
+    "tokens_before_est": 13549,
+    "tokens_after_est": 13549,
+    "tokens_saved_est": 0,
+    "savings_pct_est": 0.0,
+    "content_type": "ContentType.JSON",
+    "handler_used": "json",
+    "ccr_key_present": true,
+    "sample_compressed_prefix": "2026-06-08T12:00:00Z [INFO] request_id=req_00000 route=/api/quick-capture/audio capture_id=cap_0000 status=200 OK duration_ms=120 user=field@snowden\\n2026-06-08T12:01:00Z [INFO] request_id=req_00001 route=/api/quick-capture/audio capture_id=cap_0001 status=200 OK duration_ms=121 user=field@snowden\\n2026-06-08T12:02:00Z [INFO] request_id=req_00002 route=/api/quick-capture/audio capture_id=cap_0002 status=200 OK duration_ms=122 user=field@snowden\\n2026-06-08T12:03:00Z [INFO] request_id=req_00003 rout"
+  },
+  {
+    "sample": "hermes_context_compressor_code",
+    "chars_before": 65000,
+    "chars_after": 31758,
+    "tokens_before_est": 14042,
+    "tokens_after_est": 7571,
+    "tokens_saved_est": 6471,
+    "savings_pct_est": 46.1,
+    "content_type": "ContentType.CODE",
+    "handler_used": "code",
+    "ccr_key_present": true,
+    "sample_compressed_prefix": "\"\"\"Automatic context window compression for long conversations. Self-contained class with its own OpenAI client for summarization. Uses auxiliary model (cheap/fast) to summarize middle turns while protecting head and tail context. Improvements over v2: - Structured summary template with Resolved/Pending question tracking - Filter-safe summarizer preamble that treats prior turns as source material - \"Remaining Work\" replaces \"Next Steps\" to avoid reading as active instructions - Clear separator w"
+  },
+  {
+    "sample": "headroom_video_transcript",
+    "chars_before": 70000,
+    "chars_after": 16854,
+    "tokens_before_est": 17948,
+    "tokens_after_est": 3906,
+    "tokens_saved_est": 14042,
+    "savings_pct_est": 78.2,
+    "content_type": "ContentType.JSON",
+    "handler_used": "json",
+    "ccr_key_present": true,
+    "sample_compressed_prefix": "{\\n  \"video_id\": \"UOWSHg18cL0\",\\n  \"segment_count\": 1090,\\n  \"duration\": \"41:12\",\\n  \"full_text\":I'm Tejas. I am going to present an open source project Headroom. first time in Minneapolis. Headroom is this project that started around 4 months ago. I use of cloud code ran out of tokens every day. when will clock reset and I start using more tokens? work at Netflix as a senior engineer. building data storage recommendations when like something, watch trying solve problem for cloud code. Python gets m"
+  },
+  {
+    "sample": "browser_snapshot_like",
+    "chars_before": 98929,
+    "chars_after": 35129,
+    "tokens_before_est": 21300,
+    "tokens_after_est": 9160,
+    "tokens_saved_est": 12140,
+    "savings_pct_est": 57.0,
+    "content_type": "ContentType.UNKNOWN",
+    "handler_used": "noop",
+    "ccr_key_present": true,
+    "sample_compressed_prefix": "[ref @e0] link/button text='Snowden dashboard item 0' aria='Open deliverable CDL-700' details='long repeated navigation and CSS classes card border text muted action dropdown status priority owner updated timestamp' [ref @e1] link/button text='Snowden dashboard item 1' aria='Open deliverable CDL-701' details='long repeated navigation and CSS classes card border text muted action dropdown status priority owner updated timestamp' [ref @e2] link/button text='Snowden dashboard item 2' aria='Open del"
+  }
+]
